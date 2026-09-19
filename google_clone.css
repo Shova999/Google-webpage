@@ -1,0 +1,419 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid red; */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul > .text{
+    font-size: 14px;
+}
+
+
+/* Header Style Start */
+
+header{
+    margin-top: -10px;
+}
+
+header ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;    
+}
+header ul a{
+    text-decoration: none;
+    color: black;
+}
+header #first_line{
+    padding: 0 10px;
+}
+header #first_line #c1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid transparent;
+}
+header #first_line #c2{
+    display: flex;
+    border: 7px solid transparent;
+}
+header #first_line ul .fa-folder{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+hr{
+    border: 1px solid gainsboro;
+    margin-top: -12px;
+}
+header #sec_line{
+    justify-content: right;
+}
+header #sec_line li{
+    padding: 0 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+header #sec_line .u_line{
+    margin-top: 5px;
+    position: relative;
+}
+header #sec_line .fa-bars{
+    border: 5px solid transparent;
+    font-size: 20px;
+    color: gray;
+}
+header #sec_line #icon{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    text-align: center;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border-radius: 50%;  
+}
+header #sec_line #icon_ef{
+    padding: 5px;
+    margin: -5px;
+    margin-right: 10px;
+}
+
+/* hover effect */
+
+/* header #first_line li:hover{
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px; 
+    transition: 0.5s;
+} */
+
+header .Effect:hover{
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px; 
+    transition: 0.5s;
+}
+header #sec_line .u_line::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: grey;
+    transition: width 0.4s ease;
+}
+header #sec_line .u_line:hover::after{
+    width: 100%;
+}
+header #icon_ef:hover{
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%; 
+}
+/* Header Style End */
+
+
+/* Middle style Start */
+
+#middle img{
+    height: 120px;
+    width: 288px;
+}
+#middle #g_img{
+    margin: 70px;
+    text-align: center;
+}
+#middle ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#middle ul a{
+    text-decoration: none;
+    color: black;
+}
+#middle #g_icon{
+    width: 55%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: -50px;
+    padding: 1px 2px 1px 2px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.20);
+    border-radius: 30px;
+}
+#middle #g_icon #g1{
+    margin-right: 15px;
+    padding-left: 20px;
+}
+#middle #g_icon #g1 #g2 > li{
+    margin-right: 15px;
+}
+#middle #g_icon #g1 #g2 #g_ai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    margin-top: 2px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+}
+
+#middle #g_icon #g1 #g2 #b_circle .fa-circle{
+    font-size: 5px;
+}
+
+#middle #g_icon #g1 #g2 #b_circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 18px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+#middle #g_icon ul #m1{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+}
+#middle #g_icon ul #m2{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+}
+#middle #g_icon ul #m3{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid transparent;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+#middle #g_icon ul #m4{
+    margin-top: -3px;
+}
+#middle #g_icon #g1 #g2 #g_ai{
+
+    border: 3px solid transparent;
+    transition: 0.3s;
+   
+}
+
+input{
+    font-size: 18px;
+    width: 450px;
+    border: grey;
+    border-radius: 20px;
+    margin: 0;
+    padding: 5px 20px 10px 10px; 
+}
+input:focus {
+    outline: none;
+    border: none;
+}
+
+/* Utube part start */
+
+#Utube {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 40px;
+}
+
+
+/* Each shortcut */
+
+#Utube .shortcut .bg{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Utube .shortcut .bg{
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#Utube .shortcut .bg #tube_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(210, 216, 216);
+}
+#Utube .shortcut .bg #plus_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(210, 216, 216);
+}
+
+
+/* Icon box */
+
+#Utube .shortcut > div:first-child {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+
+/* YouTube image */
+
+#Utube #tube_icon img {
+    width: 64px;
+    height: 48px;
+}
+
+
+/* Plus */
+
+#Utube #plus_icon .fa-plus {
+    font-size: 20px;
+}
+
+
+/* Text */
+
+#Utube .U_text {
+    width: 100px;
+    
+    font-size: 15px;
+    text-align: center;
+}
+#Utube .shortcut #U_text2{
+    margin-top: 30px;
+}
+#Utube .shortcut #U_text1{
+    margin-top: 20px;
+}
+#Utube a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Hover */
+
+#Utube .shortcut > div:first-child:hover {
+    background-color: rgb(226, 222, 222);
+    border-radius: 10px;
+}
+
+
+/* Utube part end */
+
+
+
+/* hover Style start */
+
+#middle .hover_m:hover{
+    box-shadow: 0 1px 4px 2px rgba(32, 33, 36, 0.20);
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px; 
+}
+#m4:hover #g_ai {
+    background:
+        linear-gradient(rgb(243, 243, 243), rgb(243, 243, 243)) padding-box,
+        conic-gradient(
+            yellow
+            blue,
+            red,
+            yellow,
+            ) border-box;
+    animation: aiBorder 2s linear infinite;
+}
+
+@keyframes aiBorder {
+    from {
+        background:
+            linear-gradient(rgb(243, 243, 243), rgb(243, 243, 243)) padding-box,
+            conic-gradient(blue, red, yellow, blue) border-box;
+    }
+
+    to {
+        background:
+            linear-gradient(rgb(243, 243, 243), rgb(243, 243, 243)) padding-box,
+            conic-gradient(yellow, blue, red, yellow) border-box;
+    }
+}
+
+/* hover Style end */
+
+/* Middle style end */
+
+
+/* Footer Style Start */
+
+#footer{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 260px;
+}
+#footer ul{
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-right: 40px;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 15px;
+    background-color: rgb(153, 209, 231);
+    border-radius: 20px;
+
+}
+#footer ul a{
+    text-decoration: none;
+    color: black;
+}
+#footer ul .fa-pen{
+    font-size: 14px;
+    color: rgb(42, 42, 42);
+}
+#footer ul .text{
+    margin-left: 10px;
+}
+
+/* Hover part */
+
+#footer ul:hover{
+    background-color: rgb(177, 228, 249);
+}
+
+/* Footer Style End */
